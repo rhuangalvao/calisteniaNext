@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="public/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+<body>
+  <div class="row">
+    <div class="col corfundo">
+      <h3>Calistenia Next</h3>
+    </div>
+    <div class="col-10">
+    </div>
+  </div>
+  <!-- <div class="container"> -->
+    <div class="row">
+      <div class="col corfundo">
+        <div class="row">
+          <button class="button" onclick="beneficios()">Benefícios</button>
+          <button class="button" onclick="treinos()">Treinos</button>
+          <!-- <button class="button" onclick="noticias()">Notícias</button> -->
+          <button class="button" onclick="gordura()">% de gordura</button>
+          <button class="button" onclick="imc()">IMC</button>
+          <button class="button" onclick="suplementos()">Suplementos</button>
+          <button class="button" onclick="curso()">Curso</button>
+          <p>Matheus Cavagnari</p>
+          <p>Tik Tok</p>
+          <p>@matheuscavagnari</p>
+        </div>
+      </div>
+      <div class="col-10">
+          <div class="row" id="conteudo"></div>
+      </div>
+    </div>
+  <!-- </div> -->
+</body>
+</html>
+
+<script>
+
+  largura = 800;
+  altura = 500;
+
+  treinos();
+
+  function beneficios() {
+    document.getElementById("conteudo").innerHTML = "<div></div>"
+    document.getElementById("conteudo").innerHTML += "<h3>Benefícios da Calistenia</h3>"
+    document.getElementById("conteudo").innerHTML += "<p>Como todo exercício físico a Calistenia também promove inúmeros benefícios, se bem planejada, como:Aumento da massa muscular;Aumento da força física;Melhora a resistência;Melhora a mobilidade;Contribui para o aumento da flexibilidade e do equilíbrio corporal;Não são necessários equipamentos e acessórios caros;É gratuita;Adequada para qualquer nível de condicionamento físico;Pode ser praticar em qualquer lugar;Contribui para o desenvolvimento e evolução da coordenação motora;Reduz o percentual de gordura corporal;Contribui para o aumento do gasto energético;Contribui para um metabolismo mais ativo;Reduz a frequência cardíaca em repouso;Trabalha o corpo todo, pois a calistenia é eficaz para alcançar o corpo inteiro, uma vez que existe uma variedade imensa de exercícios que trabalham todos os grupos musculares dentro de um único exercício.</p>"
+  }
+
+  function treinos() {
+    document.getElementById("conteudo").innerHTML = "<div></div>"
+    document.getElementById("conteudo").innerHTML += "<h3>Primeiros Passos</h3>" +
+        "<div class='col'><img class='center' src='public/img/1passos.png' width="+largura+" height="+altura+">" +
+        "<h3>Iniciante</h3>" +
+        "<div class='col'><img class='center' src='public/img/iniciante1.png' width="+largura+" height="+altura+">" +
+        "<div class='col'><img class='center' src='public/img/iniciante2.png' width="+largura+" height="+altura+">" +
+        "<h3>Intermediario</h3>" +
+        "<div class='col'><img class='center' src='public/img/medio1.png' width="+largura+" height="+altura+">" +
+        "<div class='col'><img class='center' src='public/img/medio2.png' width="+largura+" height="+altura+">" +
+        "<h3>Avançado</h3>" +
+        "<div class='col'><img class='center' src='public/img/avancado1.png' width="+largura+" height="+altura+">" +
+        "<div class='col'><img class='center' src='public/img/avancado2.png' width="+largura+" height="+altura+">"
+  }
+  function noticias() {
+    document.getElementById("conteudo").innerHTML = "<div></div>"
+  }
+  function gordura() {
+    document.getElementById("conteudo").innerHTML = "<div></div>"
+  }
+  function calcularImc() {
+      var altura = document.getElementById('altura');
+      var peso = document.getElementById('peso');
+      var resultado = (peso.value / Math.pow(altura.value, 2)).toFixed(2);
+      document.getElementById("conteudo").innerHTML += "<div>"+resultado+"</div>"
+  }
+  function imc() {
+    document.getElementById("conteudo").innerHTML = "<div></div>"
+    document.getElementById("conteudo").innerHTML += "<div><label>Informe a altura (m): </label><input type='number' id='altura' /></div><div><label>Informe o peso(Kg): </label><input type='number' id='peso' /></div><div><button onclick='calcularImc()'>Calcular</button></div>"
+  }
+  function suplementos() {
+    document.getElementById("conteudo").innerHTML = "<div></div>"
+    document.getElementById("conteudo").innerHTML += "<h3>Alimentação x Calistenia</h3>"
+    document.getElementById("conteudo").innerHTML += "<p>Tanto a dieta para quem quer emagrecer quanto à dieta para quem quer ganhar massa corporal com massa muscular, são substancialmente formadas pelos mesmos alimentos, apenas variando a quantidade. Para ganhar massa muscular, engordar ou emagrecer vai depender de nossa dieta, pois o treino é importante para conseguir alcançar nossos objetivos, porém, a dieta representa mais da metade de qualquer resultado que buscamos.Se a sua intenção é emagrecer deve-se gastar mais calorias do que consumir, isso é o básico e é claro, evitar frituras, doces, molhos, refrigerantes, carboidratos simples como doces, pães, massas e consumir proteínas magras, carboidratos integrais, vegetais e frutas.Caso queira ganhar peso e principalmente massa muscular deve consumir o mesmo só que em maior quantidade e mais vezes. Para ganhar massa muscular tem que ingerir cerca de 2 gramas de proteínas por quilo de peso corporal no dia, isso tudo é o básico, o começo.É importante calcular a quantidade de macro nutrientes, pois eles são importantes para nossa dieta e tem que ter os três: proteínas, carboidratos e gorduras. O cálculo da alimentação ingerida por dia faz parte do controle do que você está comendo e também para atingir suas metas.A divisão do que você tem que comer ao dia é 50% carboidrato, 35% proteínas e 15% gorduras. Porém vai depender da saúde e do biótipo da pessoa, a dieta para mim não é a mesma para você.Outro item importante é comer no horário certo. Quando você for treinar, o ideal é se alimentar cerca de 90 a 120 minutos antes do treino de calistenia. Devem ser alimentos que contenham carboidratos para dar mais energia, frutas como banana ou vegetais como a batata doce, por exemplo.Consuma gorduras do bem, se a intenção é ganhar massa, que tal alimentar-se de proteínas ao acordar, como filé de frango com batata doce e um queijo? E antes de dormir um mix de castanhas e nozes em conjunto com uma proteína? Esses são exemplos de alimentos com gordura do bem. Essas são apenas dicas gerais, para realmente poder ter resultados consistentes, com segurança à sua saúde, procure um profissional da área da nutrição.Evite gorduras e carboidratos na mesma refeição, principalmente à noite. Segue alguns alimentos importantes para ganho de massa muscular:Proteínas: peixes, clara de ovo, filé de peito de frango, carnes vermelhas;Carboidratos: batata doce, arroz integral, pão integral, mandioca, batata, tapioca;Gorduras do bem: azeite de oliva extravirgem, óleo de coco, castanha do Pará, nozes, amêndoas, gema de ovo.</p>"
+
+  }
+  function curso() {
+    document.getElementById("conteudo").innerHTML = "<div></div>"
+    document.getElementById("conteudo").innerHTML += "<h3>Curso de calistenia</h3>"
+    document.getElementById("conteudo").innerHTML += "<p>https://www.institutoesfera.org/curso-de-calistenia</p>"
+  }
+
+</script>
